@@ -1,0 +1,264 @@
+html {
+  background: #3f6601;
+}
+
+@font-face {
+  font-family: Unifraktur;
+  src: url(fonty/Roboto-Regular.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: Unifraktur;
+  src: url(fonty/Roboto-Bold.ttf);
+  font-weight: bold;
+}
+
+
+  body {
+    background-color: #000000;
+    box-sizing: border-box;
+    margin: 0;
+    color:#f0efc2f5;
+    font: 20px "Unifraktur";
+    padding: 100px 0px 0px 0px;
+    min-width: 960px;
+  }
+  body > header {
+    height: 100px;
+    width: 100%;
+    background: #3f6601;
+    color: #000000;
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+  }
+
+
+    #logo {
+      height: 75px;
+      margin: auto 0 auto 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: url('obrazky/logo.png') no-repeat;
+      background-size: 80px 80px;
+    }
+    #logo > * {
+      margin: 0 0 0 80px;
+    }
+    #logo h1 {
+      font-weight: normal;
+      font-size: 1.5em;
+      line-height: 1.2em;
+      color: rgb(2, 2, 2);
+    }
+    #logo h1 span {
+      margin-left: 5px;
+        text-transform: uppercase;
+    }
+    #logo small {
+      align-self: center;
+      text-transform: uppercase;
+      font-size: 0.85em;
+    }
+
+   
+
+body footer a {
+  color:#3f6601
+}
+
+  nav ul {
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  nav ul li {
+    padding: 0 20px; /* Zachová mezery mezi položkami */
+    margin: 0; /* Odstraní mezery mezi položkami */
+    display: flex; /* Aktivuje flexbox na každé položce */
+    align-items: center; /* Vertikálně zarovná obsah na střed */
+    font-size: 1em;
+    line-height: normal; /* Zruší nepřirozené rozdělení textu */
+  }
+  nav ul a {
+    color: #f0efc2f5;
+    padding: 8px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  nav ul a:hover, .aktivni a {
+    border-bottom: 2px solid #741003f5;
+  }
+
+article {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 50px 50px 10px 50px;
+ }
+  article header {
+    height: 80px;
+  }
+  article h1,
+  article h2,
+  article h3,
+  article h4,
+  article h5,
+  article h6 {
+      color: #3f6601f5;
+      padding: 10px 0;
+  }
+  article h1 {
+    margin: 0;
+    font-size: 2.3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 4px solid #741003f5;
+    width: max-content;
+  }
+  article h2 {
+    font-size: 2em;
+  }
+    article section p {
+      line-height: 1.8em;
+      margin-bottom: 1.5em;
+    }
+    article section a {
+      color: #3f6601f5;
+    }
+
+.uvodni-obrazek {
+  float: right;
+  width: 500px;
+  padding-left: 10px;
+  margin-right: 80px;
+}
+
+footer {
+  box-sizing: border-box;
+  text-align: center;
+  height: 100px;
+  color: white;
+  background: #3f6601;
+  padding: 50px 0 0 0;
+  clip-path: polygon(0 30px, 100% 0, 100% 105%, 0 105%);
+}
+
+footer a {
+color: white;
+text-decoration: none;
+}
+
+.cistic {
+  clear: both;
+}
+
+
+.kontakt-tlacitko {
+  background: #801002;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+.kontakt-tlacitko:hover,
+.reference-tlacitko:hover {
+    filter: brightness(115%) contrast(85%);
+    border: 0;
+}
+
+.reference-tlacitko {
+  background: #3f6601f5;
+  color: white;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+}
+
+
+
+/*styl pro dovednosti*/
+#dovednosti td {
+  width: 33%;
+  padding: 10px;
+  vertical-align: top; /*centrovani bunky nahoru*/
+  border: 2px solid gray; /*ramecek 1px tlusty */
+}
+#dovednosti {
+  border-collapse: collapse;
+}
+
+.centrovany {
+  text-align: center;
+}
+
+
+
+/*styl pro kontakt*/
+/* tohle je k obrazku v kontaktu */
+.vlevo {
+  float: left;
+}
+
+form {
+  font-family: Arial, sans-serif;
+  color: #f0efc2; 
+  background-color: #3f6601; 
+  padding: 20px;
+  border-radius: 10px; /* Zaoblené rohy formuláře */
+  width: 300px; /* Šířka formuláře */
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 93%; /* Šířka polí */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #741003; /* Barva okrajů */
+  border-radius: 5px; 
+  background-color: #f0efc2; 
+  color: #3f6601; 
+}
+
+form input[type="submit"] {
+  background-color: #741003; 
+  color: #f0efc2; 
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #741003;
+  filter: brightness(115%) contrast(85%);
+  color: #f0efc2;
+}
+
+/* Styl pro reference */
+
+#reference img {
+  border: 1px solid #3f6601;
+  padding: 6px;
+  box-shadow: 3px 3px 6px #3f6601;
+  margin-right: 6px;
+}
+
+#reference a {
+  text-decoration: none;
+}
+
+#reference a:hover {
+  text-decoration: none;
+}
